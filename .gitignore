@@ -5,6 +5,7 @@
 !/.gitignore
 !/.env.example
 !/README.md
+!/AGENTS.md
 !/blog-workflow-plan.md
 !/naver-blog-prompt.md
 !/naver-blog-api-guide.md
