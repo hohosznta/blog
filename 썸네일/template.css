@@ -1,0 +1,95 @@
+/* 표지 2 */
+
+position: relative;
+width: 1080px;
+height: 1350px;
+
+background: url(Checker.png);
+
+
+/* 그라데이션배경 */
+
+position: absolute;
+width: 1080px;
+height: 1350px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, rgba(217, 217, 217, 0) 0%, rgba(17, 17, 17, 0.7) 81.73%);
+
+
+
+position: absolute;
+width: 900px;
+height: 300px;
+left: 90px;
+top: 935px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 700;
+font-size: 95px;
+line-height: 113px;
+
+color: #FFFFFF;
+
+
+
+/* 소제목도 여기다가 살짝 적어주기 */
+
+position: absolute;
+width: 578px;
+height: 54px;
+left: 90px;
+top: 1181px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 54px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* 추가제목 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 307px;
+height: 70px;
+left: 90px;
+top: 846px;
+
+background: #D7FFFC;
+border-radius: 999px;
+
+
+/* ★여기도 귀엽게···· */
+
+width: 270px;
+height: 43px;
+
+font-family: 'Pretendard';
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 43px;
+/* identical to box height */
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;

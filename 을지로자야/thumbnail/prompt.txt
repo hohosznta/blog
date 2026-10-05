@@ -1,0 +1,15 @@
+Tool: built-in image_gen (compositing).
+Original: ../IMG_2139.HEIC
+Edit input: ../research/previews/IMG_2139-upright.jpg (orientation-corrected JPEG preview).
+Output: 을지로자야-썸네일.png
+Design: /Users/yoolim/autohub/blog/썸네일/template.css
+Selection: Compared IMG_2137, IMG_2138 and IMG_2139; selected IMG_2139 for clear lemon pulp, frost and two-mug composition.
+
+Use case: compositing. Create a finished Korean food-blog thumbnail by editing the provided photograph, the sole edit target. Preserve the actual two frosted lemon beer mugs, lemon pulp and foam, table, background, natural lighting and photographic detail. Do not redraw the drinks or add props. Output portrait 4:5, ideally 1080x1350 pixels. Fit the existing photo by a minimal crop to 4:5, keeping both mug rims visible and front mug dominant.
+Design must follow this provided CSS specification, scaled proportionally if output resolution differs:
+Canvas width 1080px height 1350px.
+Full-canvas overlay: background linear-gradient(180deg, rgba(217,217,217,0) 0%, rgba(17,17,17,0.7) 80.77%).
+Headline box: position absolute; left 84px; top 921px; width 900px; height 300px; font-family Pretendard; font-style normal; font-weight 700; font-size 95px; line-height 113px; color #FFFFFF. Left aligned. Two equal-size lines. Clean bold Korean sans-serif, crisp excellent Hangul lettering and spacing.
+Exact text line 1: "레몬맥주가 상큼한"
+Exact text line 2: "을지로 자야"
+No subtitle. No extra text, price, badges, outlines, icons, watermark or decorative elements. Preserve the provided photo with only necessary crop, specified gradient and text added. Photo must look like the same real photographed scene, not an illustration or regenerated drink.

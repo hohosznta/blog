@@ -1,0 +1,29 @@
+# Publish only automation sources and reusable documentation.
+# Keep personal notes, media, scraped pages and generated results local.
+*
+!*/
+!/.gitignore
+!/.env.example
+!/README.md
+!/blog-workflow-plan.md
+!/naver-blog-prompt.md
+!/naver-blog-api-guide.md
+!/naver-search-trend.md
+!/requirements-thumbnail.txt
+!**/research/*.py
+!**/thumbnail/render.py
+!**/thumbnail/prompt*.txt
+!/썸네일/template.css
+
+# Credentials, local configuration and caches are always excluded.
+.env
+.env.*
+!/.env.example
+.venv/
+venv/
+__pycache__/
+.DS_Store
+.agents/
+.codex/
+.aws/
+.github/

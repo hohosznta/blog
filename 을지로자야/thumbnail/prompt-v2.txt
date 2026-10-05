@@ -1,0 +1,20 @@
+을지로 자야 썸네일 최종 제작 지시 (v2)
+
+메인 첫 줄: 두 시간 반 기다린
+메인 둘째 줄: 을지로 자야
+서브 카피: 레몬맥주와 푸짐한 안주
+배지: 주말 저녁 웨이팅
+근거: 후기.md의 주말 19시쯤→21시 30분쯤 입장, 레몬맥주와 안주에 대한 실제 감상.
+원본: /Users/yoolim/autohub/blog/을지로자야/IMG_2139.HEIC
+렌더링 입력: source.jpg (원본 HEIC를 sips로 JPEG 변환, 브라우저가 사진 방향 적용)
+디자인: /Users/yoolim/autohub/blog/썸네일/template.css
+
+최신 CSS를 직접 읽어 영역별 선택자를 붙이고 원래 선언을 보존한다. 캔버스 1080×1350, 메인 (90,935) 900×300 / Pretendard 700 95px·113px, 서브 (90,1181) 578×54 / 500 45px·54px, 배지 (90,846) 307×70 / #D7FFFC / radius 999px, 배지 글씨 600 36px·43px를 적용한다. 그라데이션은 원본 CSS의 rgba(17,17,17,0.7) 81.73% 값을 그대로 사용한다. 박스 크기는 border-box 기준으로 맞춘다.
+
+실제 로컬 Pretendard Bold·Medium·SemiBold OTF를 @font-face로 로딩한다. 원본 사진은 object-fit:cover로 배치한다. 사진 재생성이나 AI 타이포그래피를 사용하지 않는다. 폰트와 사진 로딩 완료 후 Chrome/Playwright에서 device_scale_factor=1로 캡처한다. 제목과 서브의 크기를 임의로 확대하지 않는다.
+
+재현: uv run --with playwright python 을지로자야/thumbnail/render.py
+HTML: thumbnail.html
+출력: 을지로자야-썸네일-v2.png
+검증: render-check.json에서 실제 좌표·영역·폰트를 기록하고 가로 넘침 없음 확인. 최종 PNG 시각 검수.
+이전 image_gen 프롬프트 prompt.txt와 v1 PNG는 변경 이력으로 보존한다. 현재 최종본은 v2다.
